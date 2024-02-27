@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+#part{
+    display: flex;
+    
+}
+#dashboard{
+    margin-top: 10vh;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    min-height: 100vh;
+    width: 20vw;
+    box-shadow: 10px 00px 10px #403771;
+    z-index: 1;
+    background: linear-gradient(10deg, #403771,#8472cc);
+}
+
+#part1{
+    position: fixed;
+    z-index: 10;
+    min-height: 10vh;
+    width: 100%;
+    background: linear-gradient(10deg, #403771,#8472cc );
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    padding: 10px;
+    justify-content: space-between;
+}
+.top i{
+    color: whitesmoke;
+}
+.top span{
+    font-family: "Anta", sans-serif;
+    color: aliceblue;
+}
+
+#part2{
+    margin-left: 20vw;;
+    overflow: hidden;
+    position: relative;
+    min-height:  110vh;
+    width: 80vw;
+    justify-content: center;
+    border-bottom-right-radius: 400px;
+    background: linear-gradient(200deg, #403771,#8472cc );
+}
+#register{
+
+    display: flex;
+}
+
+#register li{
+    font-family: "Anta", sans-serif;
+    list-style: none;
+    margin: 10px;
+    font-size: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.365);
+    box-shadow: inset -2px 3px 10px black;
+    padding: 10px 25px;
+    border-radius: 20px;
+}
+#register li a{
+    color: bisque;
+
+    text-decoration: none;
+}
+
+.head{
+    position: absolute;
+    margin-top: 20vh;
+    margin-left: 20px;
+    
+    
+}
+.left-side{
+    animation: left-content 1s linear;
+
+}
+#element{
+    font-size: 40px;
+    font-family: "Caveat", cursive;
+    text-shadow: 10px 10px 10px #403771;
+}
+#main-content{
+    top: 70px;
+}
+@keyframes left-content {
+    0%{
+        transform: translate(-120px);
+
+    }
+    100%{
+        transform: translate(0);
+    }
+    
+}
+#main-content span{
+    font-size: 40px;
+    color: #ffffff;
+    text-shadow: 10px 10px 0px #40377185;
+    padding-bottom: 20px;
+}
+#main-content .right-side span{
+    position: relative;
+    color: #FEA8A8;
+}
+.right-side{
+    animation: right-content 1s linear;
+    margin-top: 40px;
+    margin-left: 20vw;
+}
+@keyframes right-content {
+    0%{
+        transform: translateX(220px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
