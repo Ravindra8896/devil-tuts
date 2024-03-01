@@ -1,0 +1,49 @@
+*,:after,:before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+
+}
+.top{
+    min-height: 100vh;
+    width: 100%;
+}
+.bg-red{
+    background-color: red;
+
+}
+.page-1{
+    min-height: 70vh;
+    width: 100%;
+    position: relative;
+    left: 0;
+    
+    right: 0;
+    z-index: 1;
+}
+.banner{
+    font-size: 10vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    white-space: nowrap;
+    line-height: 1;
+    position: absolute;
+    box-sizing: inherit;
+    -webkit-text-size-adjust: 100%;
+}
+.one{
+    top: 33%;
+    transform: translateX(-50vw) rotate(26deg);
+}
+.inner-block-direction{
+    background-color: aliceblue;
+    display: block;
+    padding: 0 20px;
+    white-space: nowrap;
+
+
+}
