@@ -1,11 +1,21 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
 .m-10{
     margin: 10px;
 }
 .pl-10{
     padding-left: 10px;
 }
+.p-10{
+    padding: 10px;
+}
 .flex{
     display: flex;
+}
+.logo-font-permanent-M{
+    font-family: "Permanent Marker", cursive;
 }
 .bg-red{
     background-color: red;
