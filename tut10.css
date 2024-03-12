@@ -89,12 +89,12 @@ nav ul li{
 
 .wrapper{
     position: relative;
-    background-image: url(https://images.pexels.com/photos/7261374/pexels-photo-7261374.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-    background-color:#7884a49d;
+    /* background-image: url(https://images.pexels.com/photos/7261374/pexels-photo-7261374.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); */
+    background: linear-gradient(80deg, rgba(43, 53, 42, 0.548), rgba(128, 70, 221, 0.496));
     box-shadow: 10px 10px 20px black;
-    margin: 150px 200px;
+    margin: 150px 150px;
     border-radius: 30px;
-    min-height: 70vh;
+    min-height: 75vh;
     overflow-x: hidden;
 }
 .wrapper section{
@@ -116,6 +116,7 @@ nav ul li{
 .right-section img{
     width: 80%;
     margin: 50px 0;
+    filter: drop-shadow(10px 12px 10px black) ;
 }
 .purple{
     color: rgb(226, 43, 43);
@@ -143,6 +144,9 @@ nav ul li{
     width: 150px;
     border: 1px solid white;
     border-radius: 16px;
+}
+.text-white{
+    color: white;
 }
 #html{
     background-image: url(https://www.pngkit.com/png/detail/352-3529873_html5-js-css3-logo-png-html5-icon.png);
