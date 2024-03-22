@@ -243,7 +243,7 @@ section{
   width: 100%;
 }
 .hero{
-  margin-top: 20vh;
+  /* margin-top: 20vh; */
   height: 80vh;
   /* background-color: aqua; */
 }
@@ -257,7 +257,7 @@ section{
 .hero-img{
   height: 100%;
   width: 90%;
-  margin: 0px 10px;
+  /* margin: 0px 0px; */
   /* object-fit: cover; */
   border-radius: 40px;
   position: absolute;
@@ -269,11 +269,8 @@ section{
 
 }
 .hero-img img{
-  
   width: 100%;
   height: 100%;
-
-
   object-fit: fill;
 }
 .hero-img::after{
@@ -327,7 +324,6 @@ section{
 }
 .thumbnail{
   position: absolute;
-  top: 1000px;
   bottom: 10px;
   z-index: 11;
   display: flex;
@@ -374,7 +370,7 @@ section{
   }
   
 }
-.hero-section{
+/* .hero-section{
   margin-top: 10vh;
   height: 50vh;
   width: 100%;
@@ -402,8 +398,8 @@ section .slider{
   transition: .5s;
   background-position: center;
   background-size: cover;
-}
-#img-1{
+} */
+/* #img-1{
   background-color: orange;
   background-image: url(https://assets.rebelmouse.io/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy8xMDYzMjg4MC9vcmlnaW4uanBnIiwiZXhwaXJlc19hdCI6MTYwMjY4NjAxNH0.Pt7xCqlvIaEfbSGuP7ZkWFjz-J6CSIwriGfliv3n8qU/img.jpg?width=1200&height=628);
   
@@ -419,12 +415,12 @@ section .slider{
 #img-4{
   background-color: rgb(244, 222, 180);
   background-image: url(https://wallpapercave.com/wp/wp6423854.jpg);
-}
-#img-5{
+} */
+/* #img-5{
   background-color: rgb(134, 112, 71);
   background-image: url(https://images.saymedia-content.com/.image/t_share/MTc1MTExMTQ5NjY1NjU3OTUx/top-20-best-bollywood-h.jpg);
-}
-.slider .item:nth-child(1),
+} */
+/* .slider .item:nth-child(1),
 .slider .item:nth-child(2){
   top: 0;
   left: 0;
@@ -457,4 +453,4 @@ section .slider{
 }
 .slider .item p{
   padding: 20px;
-}
+} */
