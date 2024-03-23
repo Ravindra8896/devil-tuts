@@ -7,20 +7,68 @@ body{
     width: 100%;
     font-family: fantasy;
     background-color: rgb(9, 116, 80);
-
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    position: relative;
 }
 header{
     position: fixed;
     width: 100%;
     top: 0;
+    display: flex;
     border-bottom: 1px solid white;
     box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.698) ;
     height: 10vh;
     z-index: 100;
     animation: view-page .5s linear 1 ;
-    animation-delay: 1s;
+    
     backdrop-filter: blur(10px);
     
+}
+.social-media{
+    position: absolute;
+    top: 10vh;
+    right: 20px;
+
+}
+.social-media i{
+    margin: 0 10px;
+}
+.flex{
+    display: flex;
+}
+.navbar{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    justify-content: center;
+}
+nav ul li{
+    list-style-type: none;
+    width: 100px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 2px;
+    text-align: center;
+    
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(36, 128, 209);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.logo-left{
+    height: 100%;
+    width: 30%;
+    /* background-color: aliceblue; */
+    padding: 0 20px;
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 @keyframes view-page {
     0%{
@@ -48,7 +96,7 @@ header{
     left: 25%;
     width: 50%;
     animation: platform .5s ease-in ;
-    animation-delay: .5s;
+    /* animation-delay: .5s; */
     /* background-color: aliceblue; */
 }
 .branding-position p{
@@ -140,18 +188,71 @@ animation-delay: .1s;
     left: -100vw;
     animation-delay: .6s;
 }
+#content-section{
+    width: 90%;
+    height: 200vh;
+    margin: auto;
+    background-color: rgb(4, 56, 39);
+    box-shadow: inset 0px 0px 100px rgba(183, 183, 183, 0.514);
+}
 section{
     position: relative;
 }
-section .services{
+section .Product{
     height: 40vh;
     width: 100%;
     font-size: 9em;
     display: flex;
     justify-content: center;
-    position: absolute;
-    top: -60px;
-}
-section .services h1{
     
+}
+section .Product h1{
+    color: rgb(21, 127, 76);
+    text-shadow: 2px 2px 10px  rgb(4, 2, 2);
+    font-weight: 100;
+    font-size: 100px;
+    padding-top: 100px;
+}
+.Products{
+    height: 50vh;
+    width:90%;
+    perspective: 1000px;
+    /* background-color: aliceblue; */
+    margin: 10px auto;
+    position: relative;
+    gap: 8px;
+}
+.layer{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    gap: 8px;
+}
+.item{
+    height: 80%;
+    margin: auto;
+    border-radius: 16px;
+
+    width: 20vw;
+    background-color: rgba(240, 248, 255, 0.413);
+}
+#Trending{
+    height: 200vh;
+    width: 100%;
+    padding-top: 10vh;
+    /* background-color: aliceblue; */
+}
+#Trending-label{
+    /* margin-top: 10vh; */
+    height: 40vh;
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+    background-color: aliceblue;
+    gap: 10px;
+}
+#Trending-label img{
+    height: 40vh;
+
 }
