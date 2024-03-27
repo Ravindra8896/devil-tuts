@@ -376,8 +376,8 @@ section{
   width: 100%;
   position: relative;
   /* background-color: rgb(172, 238, 216); */
-  overflow: hidden;
-}
+  /* overflow: hidden;
+} */
 section .slider{
   height: 80%;
   width: 100%;
