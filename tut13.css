@@ -23,7 +23,7 @@ header{
     width: 100%;
     position: relative;
     background-color: rgb(172, 238, 216);
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .flex{
     display: flex;
