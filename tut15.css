@@ -476,7 +476,7 @@ section.banner-sales{
     height: 50vh;
     width: 100%;
     background-color: #F7D247;
-    background-image: url();
+    background-image: url("");
 }
 section.banner-sales h1{
     position: absolute;
@@ -492,10 +492,85 @@ section.banner-sales h1{
 @keyframes sales-text {
     0%{
         text-indent: 10px;
-        text-overflow: ellipsis;
+        
     }
     100%{
         text-indent: -10px;
+    }
+    
+}
+section.banner-sales span{
+    position: absolute;
+    left: 350px;
+    top: 100px;
+    font-size: 50px;
+    transform: rotate(-30deg);
+    color: blueviolet;
+    animation: off-sale 1s alternate infinite;
+    padding: 10px ;
+    border: 1px solid blueviolet;
+    border-radius: 16px;
+    box-shadow: inset 2px 2px 10px blueviolet;
+}
+@keyframes off-sale {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        
+    }
+    
+}
+section.banner-sales{
+    position: relative;
+}
+.banner-sales h5 {
+    font-family: "Rubik Scribble", system-ui;
+    font-size: 120px;
+    align-self: flex-end;
+    position: absolute;
+    right: 40px;
+    bottom: 0;
+    filter: drop-shadow(2px 5px 1px orange);
+    overflow: hidden;
+    z-index: 1;
+
+}
+
+.box:nth-child(1){
+    right: 600px;
+    
+}
+.box:nth-child(2){
+    right: 400px;
+    animation-delay: .4s;
+}
+.box:nth-child(3){
+    right: 200px;
+    animation-delay: .8s;
+}
+.box:nth-child(4){
+    right: 0px;
+    animation-delay: 1.2s;
+}
+h5 .box{
+    width: 40%;
+    height: 30%;
+    background-color: aliceblue;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    transform: rotate(-60deg);
+    transition: all .3s linear;
+    animation-delay: 6s;
+    animation: dhamka-line 3s ease-in-out infinite;
+}
+@keyframes dhamka-line {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
     }
     
 }
