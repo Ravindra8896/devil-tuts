@@ -351,27 +351,9 @@ h1 span:nth-child(8)
 }
 .products{
     margin-top: 20vh;
-
+    flex-wrap: wrap;
     height: 100vh;
     width: 100%;
-}
-
-.product-header h1::after{
-    content: "PRODUCTS";
-    position: absolute;
-    color: greenyellow;
-    opacity: 0;
-    z-index: 0;
-    left: -100px;
-    top: -50px;
-    font-size: 140px;
-
-}
-.product-header h1:hover::after{
-    opacity: 0.5;
-    z-index: -1;
-    
-
 }
 .product{
     height: 300px;
@@ -381,7 +363,7 @@ h1 span:nth-child(8)
     border: 1px solid black;
     border-radius: 16px;
     overflow: hidden;
-    transition: all .5s ease-in;
+    transition: all 0.5s ease-in-out;
 
 }
 .product .product-image{
@@ -416,4 +398,104 @@ h1 span:nth-child(8)
 }
 .justify-center{
     justify-content: center;
+}
+
+
+
+footer section#contact-page{
+    height: 40vh;
+    width: 100%;
+    background-image: url("https://th.bing.com/th/id/OIP.imc8xZbK_A0bIiPbMQaEGwHaH_?w=1000&h=1080&rs=1&pid=ImgDetMain") ;
+    background-size: contain;
+    
+
+}
+#contact-page form{
+    width: 50%;
+    height: 100%;
+}
+.form-field{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    padding: 10px 10px;
+    margin-left: 150px;
+    border-radius: 16px;
+    border: 5px solid white;
+    position: relative;
+    box-shadow: 2px 2px 10px white,-2px -2px 10px white;
+}
+legend{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    color: aliceblue;
+
+}
+.form-field .contact-inp{
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 16px;
+    width: 520px;
+    height: 50px;
+    padding: 10px;
+    gap: 2px;
+    backdrop-filter: blur(5px);
+}
+.form-field .contact-inp::placeholder{
+    color: antiquewhite;
+    font-weight: 600;
+}
+.form-field input:focus{
+    outline: none;
+    color: aliceblue;
+    background-color: rgba(35, 35, 238, 0.515);
+}
+textarea{
+    height: 100px !important;
+    margin-top: 2px;
+}
+.form-field button{
+    width: 120px;
+    align-self: center;
+    border: 5px solid yellow;
+    border-radius: 16px;
+    font-weight: 600;
+    color: aliceblue;
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.643);
+
+}
+section.sales{
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: aquamarine; */
+    
+    position: relative;
+}
+section.banner-sales{
+    height: 50vh;
+    width: 100%;
+    background-color: #F7D247;
+    background-image: url();
+}
+section.banner-sales h1{
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    font-size: 50px;
+    font-weight: 900;
+    animation: sales-text .5s alternate infinite;
+
+
+    transform: rotate(-30deg);
+}
+@keyframes sales-text {
+    0%{
+        text-indent: 10px;
+        text-overflow: ellipsis;
+    }
+    100%{
+        text-indent: -10px;
+    }
+    
 }

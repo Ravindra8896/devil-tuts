@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webdev project E-commerce</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="tut15.css">
 </head>
 <body>
@@ -17,7 +19,7 @@
                     <li><a href="shop.html">SHOP</a></li>
                     <li><a href="blog.html">BLOG</a></li>
                     <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="#contact-page">CONTACT</a></li>
                     <li><a href="cart.html"><i class="fas fa-bucket"></i></a></li>
                 </ul>
             </nav>
@@ -35,13 +37,14 @@
             </div>
         </section>
         <section class="wrapper">
-            <div class="layer-header flex justify-center align-center">
+            <div class="layer-header flex justify-center align-center" data-aos="fade-up-right">
                 <h1 >FEATURE</h1>
                 <div class="rotater"></div>
                 <div class="rotater" id="rotater-2"></div>
             </div> 
             <section class="features flex justify-btw">
-                <div class="feature">
+                <!-- features  -->
+                <div class="feature" data-aos="fade-up-right">
                     <div class="feature-image">
                         <img src="https://th.bing.com/th/id/OIP.VDTFrvFnkmPEmY5dJojXxQHaD_?rs=1&pid=ImgDetMain" alt="" width="100%">
                     </div>
@@ -50,7 +53,7 @@
                         <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, eius?</span>
                     </p>
                 </div>
-                <div class="feature">
+                <div class="feature" data-aos="fade-up-right">
                     <div class="feature-image">
                         <img src="https://cdni.iconscout.com/illustration/premium/thumb/online-order-2750347-2294212.png" width="100%" alt="">
                     </div>
@@ -59,7 +62,7 @@
                         <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, eius?</span>
                     </p>
                 </div>
-                <div class="feature">
+                <div class="feature" data-aos="fade-up-right">
                     <div class="feature-image">
                         <img src="https://th.bing.com/th/id/OIP.1zBGe-8RjNznXT5FHnf5iQHaEK?rs=1&pid=ImgDetMain" alt="" width="100%" >
                     </div>
@@ -68,7 +71,7 @@
                         <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, eius?</span>
                     </p>
                 </div>
-                <div class="feature">
+                <div class="feature" data-aos="fade-up-right">
                     <div class="feature-image">
                         <img src="https://th.bing.com/th/id/OIP._i2r649MC_iZ82i35qD0LAHaEA?rs=1&pid=ImgDetMain" alt="" width="100%">
                     </div>
@@ -79,8 +82,9 @@
                 </div>
                 
             </section>
+            <!-- product section -->
             <section class="product-section">
-                <section class="product-header">
+                <section class="product-header" data-aos="fade-up-right">
                     
                     <h1>
                         <span>P</span>
@@ -92,11 +96,12 @@
                         <span>T</span>
                         <span>S</span>
                     </h1>
+
                     <div class="rotater"></div>
                 <div class="rotater" id="rotater-2"></div>
                 </section>
                 <section class="products flex justify-btw">
-                    <div class="product">
+                    <div class="product" data-aos="fade-up-right">
                         <div class="product-image">
                             <img src="https://image1.superdry.com/static/images/optimised/zoom/upload6832963728961617285.jpg" alt="" width="100%">
                         </div>
@@ -107,7 +112,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, magnam!</p>
                         </div>
                     </div>
-                    <div class="product">
+                    <div class="product" data-aos="fade-up-right">
                         <div class="product-image">
                             <img src="https://image1.superdry.com/static/images/optimised/zoom/upload6832963728961617285.jpg" alt="" width="100%">
                         </div>
@@ -118,9 +123,9 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, magnam!</p>
                         </div>
                     </div>
-                    <div class="product">
+                    <div class="product" data-aos="fade-up-right">
                         <div class="product-image">
-                            <img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fc1%2F34%2Fc134131e49de72f185979e77b74fd502d8ba7d39.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/fullscreen]" alt="" width="100%" height="200px">
+                            <img src="https://image1.superdry.com/static/images/optimised/zoom/upload6832963728961617285.jpg" alt="" width="100%">
                         </div>
                         <div class="product-details">
                             <span>Brand name</span><br>
@@ -129,9 +134,9 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, magnam!</p>
                         </div>
                     </div>
-                    <div class="product">
+                    <div class="product" data-aos="fade-up-right">
                         <div class="product-image">
-                            <img src="https://th.bing.com/th/id/OIP.c6Ig462LsE3kVEpSEq21QQHaJ4?rs=1&pid=ImgDetMain" alt="" width="100%">
+                            <img src="https://image1.superdry.com/static/images/optimised/zoom/upload6832963728961617285.jpg" alt="" width="100%">
                         </div>
                         <div class="product-details">
                             <span>Brand name</span><br>
@@ -140,7 +145,62 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, magnam!</p>
                         </div>
                     </div>
-                    <div class="product">
+                    <div class="product" data-aos="fade-up-right">
+                        <div class="product-image">
+                            <img src="https://th.bing.com/th/id/OIP.Lf9bOppB5Bb2DiAT_2V5QgHaHZ?rs=1&pid=ImgDetMain" alt="" width="100%">
+                        </div>
+                        <div class="product-details">
+                            <span>Brand name</span><br>
+                            <h6 >Product name</h6>
+                            <h5>$000</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, magnam!</p>
+                        </div>
+                    </div>
+                    <div class="product" data-aos="fade-up-right">
+                        <div class="product-image">
+                            <img src="https://th.bing.com/th/id/OIP.Lf9bOppB5Bb2DiAT_2V5QgHaHZ?rs=1&pid=ImgDetMain" alt="" width="100%">
+                        </div>
+                        <div class="product-details">
+                            <span>Brand name</span><br>
+                            <h6 >Product name</h6>
+                            <h5>$000</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, magnam!</p>
+                        </div>
+                    </div>
+                    <div class="product" data-aos="fade-up-right">
+                        <div class="product-image">
+                            <img src="https://th.bing.com/th/id/OIP.Lf9bOppB5Bb2DiAT_2V5QgHaHZ?rs=1&pid=ImgDetMain" alt="" width="100%">
+                        </div>
+                        <div class="product-details">
+                            <span>Brand name</span><br>
+                            <h6 >Product name</h6>
+                            <h5>$000</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, magnam!</p>
+                        </div>
+                    </div>
+                    <div class="product" data-aos="fade-up-right">
+                        <div class="product-image">
+                            <img src="https://th.bing.com/th/id/OIP.Lf9bOppB5Bb2DiAT_2V5QgHaHZ?rs=1&pid=ImgDetMain" alt="" width="100%">
+                        </div>
+                        <div class="product-details">
+                            <span>Brand name</span><br>
+                            <h6 >Product name</h6>
+                            <h5>$000</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, magnam!</p>
+                        </div>
+                    </div>
+                    <div class="product" data-aos="fade-up-right">
+                        <div class="product-image">
+                            <img src="https://th.bing.com/th/id/OIP.Lf9bOppB5Bb2DiAT_2V5QgHaHZ?rs=1&pid=ImgDetMain" alt="" width="100%">
+                        </div>
+                        <div class="product-details">
+                            <span>Brand name</span><br>
+                            <h6 >Product name</h6>
+                            <h5>$000</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, magnam!</p>
+                        </div>
+                    </div>
+                    <div class="product" data-aos="fade-up-right">
                         <div class="product-image">
                             <img src="https://th.bing.com/th/id/OIP.Lf9bOppB5Bb2DiAT_2V5QgHaHZ?rs=1&pid=ImgDetMain" alt="" width="100%">
                         </div>
@@ -155,9 +215,42 @@
                 </section>
             </section>
             
-
+            
         </section>
+        <section class="sales">
+            <section class="banner-sales flex">
+                <h1>SALE</h1>
+                <span>70%off</span>
+                <h5>diwali dhamaka</h5>
+            </section>
+        </section>
+        <footer>
+            <!-- Contact page  -->
+            <section id="contact-page" data-aos="fade-left">
+                <form action="https://api.web3forms.com/submit" class="Contact-form" method="POST" data-aos="fade-up-right">
+                    <fieldset class="form-field ">
+                        <legend>
+                            <i>CONTACT DETAILS</i>
+                        </legend>
+                        <input type="hidden" name="access_key" value="dc227011-3409-4270-89c3-88fca25a8695">
+                        
+                        <input type="text" name="Full name" placeholder="Enter your  Full name" class="contact-inp" required>
+                        <input type="email" name="Email" id="Email" placeholder="Enter your Email address " class="contact-inp" required>
+                        
+                        <textarea name="Message" id="Message" placeholder="Message" class="contact-inp"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </fieldset>
+
+            </section>
+        </footer>
     </main>
     <script src="script15.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js">
+        
+    </script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
