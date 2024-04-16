@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 100%;
+    min-height: 100%;
+    /* background-color: red; */
+}
+nav ul li, a{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(255, 149, 2);
+}
+.flex{
+    display: flex;
+
+}
+.align-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+
+}
+.justify-around{
+    justify-content: space-around;
+}
+.justify-btw{
+    justify-content: space-between;
+}
+.justify-evenly{
+    justify-content: space-evenly;
+}
+
+.main-bg{
+    width: 100%;
+    min-height: 100vh;
+    background-color: orange;
+
+    /* background-color: aqua; */
+}
+/* header */
+header{
+    height: 100vh; 
+    /* background-color: aliceblue; */
+    width: 100%;
+    background-image: url("https://www.franchiseindia.com/uploads/content/edu/art/slider1-15bb93eeaf.jpg");
+
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    position: relative;
+}
+.logo img{
+    height: 50px;
+    
+}
+.logo h3{
+    color: rgb(160, 217, 36);
+    text-shadow: 2px 2px 2px rgb(229, 222, 20);
+    
+}
+header nav{
+    height: 30%;
+    width: 100%;
+   
+}
+.head-nav{
+    width: 40%;
+    height: 100%;
+    font-weight: 900;
+    font-size: 1.5rem;
+    
+}
+.thoughts{
+    height: 35vh;
+    width: 40%;
+    border-top-right-radius: 16px;
+    background-color: #80a2e2cb;
+    position: absolute;
+    bottom: 10vh;
+    left: 0;
+    gap: 10px;
+    flex-direction: column;
+    animation: thought-box .8s ease-in ;
+}
+@keyframes thought-box {
+    0%{
+        transform: translate(-100%, 0);
+    }
+    
+}
+.thoughts img{
+    position: absolute;
+    left: 5%;
+    filter: drop-shadow(2px 2px 10px black);
+}
+.thoughts h1 span{
+    color: red;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+
+/* header responsiveness */
+@media (max-width: 600px) {
+    
+
+}
+@media(max-width: 700px){
+    .logo{
+        font-size: 20px;
+        
+}
+header{
+    background-position: 80%;
+}
+nav.navbar{
+    
+    flex-direction: column;
+    justify-content: center;
+
+    /* display: none; */
+}
+nav.navbar .head-nav{
+    width: 100%;
+    height: auto;
+    padding: 0 50px;
+    font-size: 1rem;
+    background-color:rgba(225, 228, 232, 0.878);
+}
+.thoughts{
+    font-size: .6rem;
+    width: 50%;
+    padding-left: 80px;
+}
+.thoughts img{
+    width: 100px;
+    left: 0;
+}
+
+}
+@media(max-width: 1000px){
+    .logo{
+        font-size: 1rem;
+        
+}
+
+    nav.navbar .head-nav{
+        width: 50%;
+        height: auto;
+        gap: 12px;
+        transform: translate(-40%, 20px);
+        padding: 0 50px;
+        font-size: 1.2rem;
+        /* background-color:rgba(225, 228, 232, 0.878); */
+    }
+    .thoughts{
+        
+        width: 50%;
+        padding-left: 80px;
+    }
+    
+}
+@media(max-width: 1200px){
+    .head-nav{
+        font-size: 1.2rem;
+    }
+}
+
+
+/* main section */
+main{
+    min-height: 100vh;
+    width: 100%;
+}
