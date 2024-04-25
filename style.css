@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    margin-top: 10vh;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    backdrop-filter: blur(20px);
+    position: fixed;
+}
+.carousel{
+    transform: translateY(-70px);
+}
+.carousel-inner{
+    height: 70vh;
+}
+.carousel-item{
+    height: 100%;
+
+}
+.carousel .carousel-inner h2{
+    z-index: 100;
+    position: absolute;
+    display: block;
+}
+
+.carousel-item img{
+    height: 100%;
+    /* opacity: .25; */
+}
+
